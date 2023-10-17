@@ -1,0 +1,24 @@
+<mat-accordion>
+	<mat-expansion-panel hideToggle>
+		<mat-expansion-panel-header>
+			<mat-panel-title>
+				<img mat-card-image src="/assets/images/{{image}}" class="character-image-small">
+				{{name}} 
+			</mat-panel-title>
+			<mat-panel-description>
+				{{subtitle}}
+			</mat-panel-description>
+		</mat-expansion-panel-header>
+		<mat-card class="character-card">
+			<mat-card-header>
+				<div mat-card-avatar class="character-header-image"></div>
+				<mat-card-title>{{name}}</mat-card-title>
+				<mat-card-subtitle>{{subtitle}}</mat-card-subtitle>
+			</mat-card-header>
+			<img mat-card-image src="/assets/images/{{image}}" class="character-image">
+			<mat-card-content>
+				<ng-content></ng-content>
+			</mat-card-content>
+		</mat-card>
+	</mat-expansion-panel>
+</mat-accordion>
