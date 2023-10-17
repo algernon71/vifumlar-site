@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -16,17 +17,24 @@ import {MatTableModule} from '@angular/material/table';
 import { EpisodeComponent } from './episode/episode.component';
 import { EpisodeListComponent } from './episode-list/episode-list.component';
 import { CharacterComponent } from './character/character.component';
-import { CharacterListComponent } from './character-list/character-list.component';  
+import { CharacterListComponent } from './character-list/character-list.component';
+import { MapComponent } from './map/map.component';
+import { InfoSectionComponent } from './info-section/info-section.component';
+import { PodInfoComponent } from './pod-info/pod-info.component';
 @NgModule({
   declarations: [
     AppComponent,
     EpisodeComponent,
     EpisodeListComponent,
     CharacterComponent,
-    CharacterListComponent
+    CharacterListComponent,
+    MapComponent,
+    InfoSectionComponent,
+    PodInfoComponent
   ],
   imports: [
     BrowserModule,
+     HttpClientModule,
     BrowserAnimationsModule,
     MatToolbarModule,
     MatExpansionModule,

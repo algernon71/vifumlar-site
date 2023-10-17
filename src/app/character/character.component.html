@@ -1,9 +1,11 @@
-<mat-accordion>
-	<mat-expansion-panel hideToggle>
+	<mat-expansion-panel hideToggle *ngIf="status == 'active'">
 		<mat-expansion-panel-header>
 			<mat-panel-title>
-				<img mat-card-image src="/assets/images/{{image}}" class="character-image-small">
-				{{name}} 
+				<div class="token-border">
+					<img mat-card-image src="assets/images/{{token}}" class="character-token">
+
+				</div>
+				{{name}}
 			</mat-panel-title>
 			<mat-panel-description>
 				{{subtitle}}
@@ -11,14 +13,14 @@
 		</mat-expansion-panel-header>
 		<mat-card class="character-card">
 			<mat-card-header>
-				<div mat-card-avatar class="character-header-image"></div>
-				<mat-card-title>{{name}}</mat-card-title>
-				<mat-card-subtitle>{{subtitle}}</mat-card-subtitle>
+				<mat-card-title-group>
+					<mat-card-title>{{name}}</mat-card-title>
+					<mat-card-subtitle>{{age}} år, {{subtitle}} </mat-card-subtitle>
+					<img  src="assets/images/{{image}}" class="character-image">
+				</mat-card-title-group>
 			</mat-card-header>
-			<img mat-card-image src="/assets/images/{{image}}" class="character-image">
 			<mat-card-content>
 				<ng-content></ng-content>
 			</mat-card-content>
 		</mat-card>
 	</mat-expansion-panel>
-</mat-accordion>

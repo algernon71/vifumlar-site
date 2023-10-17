@@ -1,12 +1,17 @@
+.mat-expansion-panel-header {
+  height: 80px;
+}
 .character-card {
-  max-width: 400px;
 }
 .character-image {
   max-width: 200px;
 }
-.character-image-small {
-  max-height: 30px;
+.character-token {
+  max-height: 50px;
 }
-
+.token-border {
+  padding: 20px;
+  
+}
 .character-header-image {
 }
