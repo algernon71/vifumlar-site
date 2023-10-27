@@ -21,6 +21,7 @@ import { CharacterListComponent } from './character-list/character-list.componen
 import { MapComponent } from './map/map.component';
 import { InfoSectionComponent } from './info-section/info-section.component';
 import { PodInfoComponent } from './pod-info/pod-info.component';
+import { ListenComponent } from './listen/listen.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,7 +31,8 @@ import { PodInfoComponent } from './pod-info/pod-info.component';
     CharacterListComponent,
     MapComponent,
     InfoSectionComponent,
-    PodInfoComponent
+    PodInfoComponent,
+    ListenComponent
   ],
   imports: [
     BrowserModule,

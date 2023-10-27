@@ -12,15 +12,12 @@
 	<mat-card class="episode-card" *ngIf="episode">
 		<mat-card-header>
 			<mat-card-title>{{episode.title}}</mat-card-title>
-			<mat-card-subtitle>
-				<div [innerHTML]="episode.description"></div>
-			</mat-card-subtitle>
 		</mat-card-header>
 		<mat-card-content>
-			<div>
-				<a [href]="'https://rss.com/podcasts/fummelsondqg/'+episode.id">RSS.com</a>
-			</div>
 			<div [innerHTML]="episode.description"></div>
+			<div>
+				 <a mat-raised-button color="primary" [href]="'https://rss.com/podcasts/fummelsondqg/'+episode.id" target="_blank">Lyssna på RSS.com</a>
+			</div>
 		</mat-card-content>
 	</mat-card>
 </mat-expansion-panel>

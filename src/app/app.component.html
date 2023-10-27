@@ -2,20 +2,7 @@
 
 </style>
 
-<!-- Toolbar -->
-<mat-toolbar>
-	<button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
-		<mat-icon>menu</mat-icon>
-	</button>
-	<span>Vi fumlar</span>
-	<span class="example-spacer"></span>
-	<button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
-		<mat-icon>favorite</mat-icon>
-	</button>
-	<button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
-		<mat-icon>share</mat-icon>
-	</button>
-</mat-toolbar>
+<div class="site-title">Vi fumlar</div>
 
 <div class="content" role="main">
 
@@ -26,16 +13,27 @@
 			<app-pod-info></app-pod-info>
 		</mat-tab>
 		<mat-tab label="Lyssna">
-			<app-episode-list>
-			</app-episode-list>
+			<app-listen></app-listen>
 		</mat-tab>
 		<mat-tab label="Rollpersonerna">
 			<app-character-list></app-character-list>
 		</mat-tab>
+		<mat-tab label="Kontakt">
+			<p>
+				Vi har en öppen facebook-grupp som ni gärna får gå med i och dela med er av feedback:	<br>			
+				<a href="https://www.facebook.com/groups/299751692912315/?ref=share_group_link&exp=9594">Facebook-grupp</a>
+			</p>
+			<p>
+				Det går också att skicka mail till:<br>
+				<a href="mailto:kent.narling@gmail.com">kent.narling@gmail.com</a>
+			</p>
+		</mat-tab>
+		<!--
 		<mat-tab label="Världen">
 			<app-map name="Marjura" imageUrl="http://strimlad.se/fri_konflux/svavelvinter/15.marjura.jpg"></app-map>
 		</mat-tab>
 		<mat-tab label="Äventyret">Världen</mat-tab>
+			-->
 	</mat-tab-group>
 
 
