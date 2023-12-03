@@ -22,6 +22,7 @@ import { MapComponent } from './map/map.component';
 import { InfoSectionComponent } from './info-section/info-section.component';
 import { PodInfoComponent } from './pod-info/pod-info.component';
 import { ListenComponent } from './listen/listen.component';
+import { QuoteComponent } from './quote/quote.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -32,7 +33,8 @@ import { ListenComponent } from './listen/listen.component';
     MapComponent,
     InfoSectionComponent,
     PodInfoComponent,
-    ListenComponent
+    ListenComponent,
+    QuoteComponent
   ],
   imports: [
     BrowserModule,
