@@ -16,6 +16,10 @@ export class CharacterComponent {
 	token?: string;
 	@Input()
 	subtitle?: string;
+	@Input()
+	firstEpisode?: number;
+	@Input()
+	lastEpisode?: number;
 	
 	@Input()
 	starring?: string;
