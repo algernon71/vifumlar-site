@@ -1,6 +1,6 @@
 {
   "name": "vifumlar-angular",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -12,15 +12,14 @@
   "dependencies": {
     "@angular/animations": "^16.0.0",
     "@angular/cdk": "^16.2.7",
-    "@angular/common": "~16.0.0",
+    "@angular/common": "^16.0.12",
     "@angular/compiler": "^16.0.0",
     "@angular/core": "^16.0.0",
-    "@angular/forms": "~6.0.0",
-    "@angular/material": "~16.2.7",
+    "@angular/forms": "^16.0.9",
+    "@angular/material": "^16.2.7",
     "@angular/platform-browser": "^16.0.0",
     "@angular/platform-browser-dynamic": "^16.0.0",
     "@angular/router": "^16.0.0",
-    "ngx-audio-player": "^12.0.2",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.13.0"
